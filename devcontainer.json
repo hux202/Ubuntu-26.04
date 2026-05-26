@@ -1,1 +1,13 @@
-
+{
+  "name": "Ubuntu 26.04 Desktop",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [7860],
+  "portsAttributes": {
+    "7860": {
+      "label": "Ubuntu Desktop UI",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
